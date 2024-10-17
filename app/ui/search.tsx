@@ -16,6 +16,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
     } else {
       params.delete("query");
     }
+    //replace without refresh the page ui
     replace(`${pathname}?${params.toString()}`);
   });
 
